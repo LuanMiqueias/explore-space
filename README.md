@@ -8,7 +8,7 @@
 
 ##
 
-<img src="https://luanmiqueias.com.br/img-github/explore-space.svg" alt="" width="100%"/>
+<img src="https://luanmiqueias.com.br/img-github/explore-space-1.svg" alt="" width="100%"/>
 
 
 ## Tecnologias

@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#para-rodar-o-projeto">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#imagens-do-projeto">Imagens</a>
+</p>
 
-First, run the development server:
+##
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<img src="https://luanmiqueias.com.br/img-github/explore-space.svg" alt="" width="100%"/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tecnologias
+Nesse projeto estou ultilizando
+- [NextJS](https://nextjs.org/)
+- [ReactJS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Sobre
+Explore os planetas e luas do sistema solar como seu tamanho, sua massa, temperatura, curiosidades, entre outras informações.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Principais funcionalidades da aplicação:
+- [ ] Ver informações sobre os planetas ou luas.
+- [ ] Pesquisar um planeta ou lua.
+- [ ] Ver mais informações sobre um planeta ou lua
 
-## Learn More
+## Para rodar o projeto
+- Clone o projeto
+- Abra o terminal na pasta do projeto
+- Instale as dependencias com `yarn`
+- Depois rode a aplicação com `yarn dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Imagens do projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Desktop - 3](https://user-images.githubusercontent.com/47904212/118882781-ee8c2a80-b8ca-11eb-8d08-b682fb148bfe.jpg)
+![Desktop - 2](https://user-images.githubusercontent.com/47904212/118882791-efbd5780-b8ca-11eb-8859-c1fef5ebbf6e.jpg)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

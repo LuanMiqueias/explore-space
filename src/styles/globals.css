@@ -32,7 +32,7 @@ h1,h2,h3,h4,p{
 }
 h1,h2,h3,h4{
   color:var(--title);
-  font-weight: --bold;
+  font-weight: var(--medium);
 }
 a{
   color: inherit;
@@ -40,6 +40,9 @@ a{
 }
 button{
   cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--medium);
+  font-size: .77rem;
 }
 @media(max-width:1080px){
   html{

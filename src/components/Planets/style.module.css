@@ -1,0 +1,11 @@
+.c{
+  transform: scale(0);
+  animation: show 0.4s cubic-bezier(0.83,-0.24, 0.36, 0.82) forwards;
+}
+@keyframes show {
+  to{
+    opacity: 1;
+    transform: initial;
+  }
+}
+

@@ -1,11 +1,11 @@
-import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { GetStaticProps } from "next";
 import React from "react";
 import { IData, IPlanets } from "../../@types/Planets";
 import { Planets } from "../components/Planets";
 import styles from "../styles/pages/explore.module.css";
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch("http://localhost:3000/api/planets");
+  const res = await fetch(`${process.env.URL_API}/planets`);
   const planets: IPlanets[] = await res.json();
   return {
     props: { planets },

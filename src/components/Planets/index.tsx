@@ -7,7 +7,7 @@ export const Planets = ({ planets }: IData) => {
   return (
     <div className={styles.container}>
       {planets.map((planet) => {
-        return <PlanetItem {...planet} />;
+        return <PlanetItem {...planet} key={planet._id} />;
       })}
     </div>
   );

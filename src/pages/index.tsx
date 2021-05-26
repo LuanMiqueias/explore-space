@@ -1,6 +1,8 @@
 import React from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/pages/home.module.css";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const navigate = useRouter();
@@ -12,7 +14,7 @@ export default function Home() {
   function animateHide() {
     setHide(!hide);
   }
-  function handleButton(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+  function handleButton(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     e.preventDefault();
     animateHide();
     setTimeout(toPageExplore, 450);
@@ -24,18 +26,16 @@ export default function Home() {
       }`}
     >
       <div className={styles.content}>
-        <h1>
-          Explore <span>space</span>
-        </h1>
-        <p>see information about the planets of the solar system</p>
+        <div className={styles.text_content}>
+          <h1>
+            Explore <span>space</span>
+          </h1>
+          <p>see information about the planets of the solar system</p>
+        </div>
+        <Link href="/explore">
+          <a className={styles.link_home}>go to space</a>
+        </Link>
       </div>
-      <a
-        className={styles.link_home}
-        href="/explore"
-        onClick={(e) => handleButton(e)}
-      >
-        go to space
-      </a>
     </div>
   );
 }

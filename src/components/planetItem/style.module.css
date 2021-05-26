@@ -5,6 +5,9 @@
   display:flex;
   align-items: center;
   justify-content: space-between;
+
+  scroll-snap-align:start;
+  scroll-snap-stop: always;
 }
 .container_text{
   display: flex;

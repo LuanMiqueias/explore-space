@@ -1,9 +1,11 @@
 .container h3{
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: var(--normal);
   text-transform: uppercase;
 }
 .container p{
-  font-size: .88rem;
+  font-size: .77rem;
   text-transform: uppercase;
-  color:var(--text)
+  color:var(--text);
+
 }

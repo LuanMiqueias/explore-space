@@ -6,32 +6,32 @@ let dbName = process.env.MONGODB_DB;
 let cachedClient: MongoClient = null;
 let cachedDb: Db = null;
 
-if (!uri) {
-  throw new Error(
-    "Please define the MONGODB_URI environment variable inside .env.local"
-  );
-}
+// if (!uri) {
+//   throw new Error(
+//     "Please define the MONGODB_URI environment variable inside .env.local"
+//   );
+// }
 
-if (!dbName) {
-  throw new Error(
-    "Please define the MONGODB_DB environment variable inside .env.local"
-  );
-}
+// if (!dbName) {
+//   throw new Error(
+//     "Please define the MONGODB_DB environment variable inside .env.local"
+//   );
+// }
 
-export async function connectToDatabase() {
-  if (cachedClient && cachedDb) {
-    return { client: cachedClient, db: cachedDb };
-  }
+// export async function connectToDatabase() {
+//   if (cachedClient && cachedDb) {
+//     return { client: cachedClient, db: cachedDb };
+//   }
 
-  const client = await MongoClient.connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+//   const client = await MongoClient.connect(uri, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   });
 
-  const db: Db = await client.db(dbName);
+//   const db: Db = await client.db(dbName);
 
-  cachedClient = client;
-  cachedDb = db;
+//   cachedClient = client;
+//   cachedDb = db;
 
-  return { client, db };
-}
+//   return { client, db };
+// }

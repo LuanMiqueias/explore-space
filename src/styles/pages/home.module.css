@@ -1,8 +1,6 @@
 .container{
   width: 100%;
   height: 100vh;
-  image-rendering: pixelated;
-  background: url('/background.jpg') no-repeat center center / cover;
 
   display:flex;
   align-items: center;
@@ -19,18 +17,19 @@
   flex-direction: column;
 
 
-  animation: show 0.2s ;
+  animation: show 0.2s;
+  gap:16px;
 }
-.content h1{
+.text_content h1{
   text-transform: uppercase;
   color:var(--primary-color);
   font-size: 3.5rem;
 }
-.content h1 span{
+.text_content h1 span{
   font-weight: var(--normal);
   color:var(--title);
 }
-.content p{
+.text_content p{
   text-transform: uppercase;
   font-size: .77rem;
   color:var(--text);
@@ -72,18 +71,20 @@
   }
 }
 /* Animation Hide */
+/*
 .container_hide_animation .content{
   animation: none;
-  transition: all 0.5s cubic-bezier(0.83,-0.24, 0.36, 0.82);
-  transform: translateY(-100vh);
+  transition: all 0.5s ease;
+  transform: scale(15);
   opacity: 0;
 }
-.container_hide_animation .link_home{
+
+ .container_hide_animation .link_home{
   animation: none;
   transition: all 0.5s cubic-bezier(0.83,-0.24, 0.36, 0.82);
   transform: translateY(100vh);
   opacity: 0;
-}
+} */
 
 @media(max-width:768px){
   .content h1{

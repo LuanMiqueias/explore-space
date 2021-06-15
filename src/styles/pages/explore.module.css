@@ -6,12 +6,7 @@
   justify-content: flex-start;
   gap:32px;
 
-  transition: all .3s;
-
-  overflow-y: scroll;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(300px);
-  scroll-snap-type: y mandatory;
+  transition: all .6s;
 }
 
 .content{

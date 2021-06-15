@@ -6,8 +6,7 @@
   align-items: center;
   justify-content: space-between;
 
-  scroll-snap-align:start;
-  scroll-snap-stop: always;
+  scroll-snap-align: start;
 }
 .container_text{
   display: flex;

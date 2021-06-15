@@ -1,10 +1,10 @@
 
 .containerScroll{
-  width: 7px;
+  width: 6px;
   height: 60vh;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 6px;
-  position: relative;
+  position: fixed;
   top:20vh;
 }
 .scroll{
@@ -19,5 +19,23 @@
   position: absolute;
   bottom: -18px;
   width: 12px;
-  left:-50%;
+  left:-3px;
+}
+
+
+@media(max-width:768px){
+.containerScroll{
+  width: 4px;
+  height: 80vh;
+  top:10vh;
+}
+.scrollArrow{
+  position: absolute;
+  bottom: -18px;
+  width: 12px;
+  left:-4px;
+}
+.scroll{
+  transition: all .6s;
+}
 }

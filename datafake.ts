@@ -14,8 +14,8 @@ export default [
   {
     _id: "60a54fadd4385920e1b6c818",
     surface_temperature: "123°C -233°C",
-    name: "earth 2",
-    image_url: "https://luanmiqueias.com.br/explore-space/images/moon.png",
+    name: "Mars",
+    image_url: "https://luanmiqueias.com.br/explore-space/images/mars.png",
     subtitle: "A loyal companion",
     mass: "7,349 x 10^22 kg",
     orbit_period: 27.3,
@@ -26,7 +26,7 @@ export default [
   {
     _id: "60aeae01a2c8be74a28cfaf3",
     surface_temperature: "123°C -233°C",
-    name: "earth 3",
+    name: "Venus",
     image_url: "https://luanmiqueias.com.br/explore-space/images/moon.png",
     subtitle: "A loyal companion",
     mass: "7,349 x 10^22 kg",
@@ -38,7 +38,7 @@ export default [
   {
     _id: "60aeae01a2c8be74afaf3",
     surface_temperature: "123°C -233°C",
-    name: "earth 4",
+    name: "Urano",
     image_url: "https://luanmiqueias.com.br/explore-space/images/moon.png",
     subtitle: "A loyal companion",
     mass: "7,349 x 10^22 kg",
@@ -50,7 +50,7 @@ export default [
   {
     _id: "60aeae01a2c8be748cfaf3",
     surface_temperature: "123°C -233°C",
-    name: "earth 5",
+    name: "Saturno",
     image_url: "https://luanmiqueias.com.br/explore-space/images/moon.png",
     subtitle: "A loyal companion",
     mass: "7,349 x 10^22 kg",
@@ -62,12 +62,12 @@ export default [
   {
     _id: "60aeae01a2cbe74a28cfaf3",
     surface_temperature: "123°C -233°C",
-    name: "earth 6",
+    name: "Netuno",
     image_url: "https://luanmiqueias.com.br/explore-space/images/moon.png",
     subtitle: "A loyal companion",
     mass: "7,349 x 10^22 kg",
     orbit_period: 27.3,
-    orbits: "The Earth",
+    orbits: "Jupiter",
     distance_from_the_earth: 384405,
     __v: 0,
   },

@@ -1,13 +1,24 @@
 import React from "react";
-import { IData } from "../../../@types/Planets";
+import { IPlanets } from "../../../@types/Planets";
 import { PlanetItem } from "../planetItem";
 import styles from "./style.module.css";
 
-export const Planets = ({ planets }: IData) => {
+interface IProps {
+  currentPlanetIndex: number;
+  planets: IPlanets[];
+}
+
+export const Planets: React.FC<IProps> = ({ planets, currentPlanetIndex }) => {
   return (
     <div className={styles.container}>
-      {planets.map((planet) => {
-        return <PlanetItem {...planet} key={planet._id} />;
+      {planets.map((planet, index) => {
+        return (
+          <PlanetItem
+            planetInfo={planet}
+            key={planet._id}
+            active={currentPlanetIndex === index}
+          />
+        );
       })}
     </div>
   );

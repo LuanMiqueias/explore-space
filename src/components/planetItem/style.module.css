@@ -5,8 +5,16 @@
   display:flex;
   align-items: center;
   justify-content: space-between;
+  opacity: 0;
+  transition: .6s;
 
-  scroll-snap-align: start;
+  user-select: none;
+}
+.planet__active{
+  transition-delay: .1s;
+
+  opacity: 1;
+  transform: initial;
 }
 .container_text{
   display: flex;
@@ -19,7 +27,7 @@
 .title h1{
   font-weight: var(--bold);
   font-size: 6rem;
-  margin-left: -8px;
+  margin-left:-0.5rem;
   line-height: 5.25rem;
 }
 .title h2{

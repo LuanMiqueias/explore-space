@@ -15,35 +15,35 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 export default function explore({ planets }: IData) {
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const [conter, setconter] = React.useState(0);
-  const [start, setStart] = React.useState(0);
-  const [end, setEnd] = React.useState(0);
+  const [counter, setCounter] = React.useState(0);
+
+  const [startTouch, setStartTouch] = React.useState(0);
+  const [endTouch, setEndTouch] = React.useState(0);
 
   function handleScroll(e: React.WheelEvent<HTMLDivElement>) {
-    if (e.deltaY > 0 && conter < planets.length - 1) {
-      setconter(conter + 1);
-    } else if (e.deltaY < 0 && conter > 0) {
-      setconter(conter - 1);
+    if (e.deltaY > 0 && counter < planets.length - 1) {
+      setCounter(counter + 1);
+    } else if (e.deltaY < 0 && counter > 0) {
+      setCounter(counter - 1);
     }
   }
   function handleScrollMoblie(e: React.TouchEvent<HTMLDivElement>) {
     if (e.type === "touchstart") {
-      setStart(e.changedTouches[0].pageY);
+      setStartTouch(e.changedTouches[0].pageY);
     }
     if (e.type === "touchend") {
-      console.log(e);
-      setEnd(e.changedTouches[0].pageY);
-      if (start > end && conter < planets.length - 1) {
-        setconter(conter + 1);
-      } else if (start < end && conter > 0) {
-        setconter(conter - 1);
+      setEndTouch(e.changedTouches[0].pageY);
+      if (startTouch > endTouch && counter < planets.length - 1) {
+        setCounter(counter + 1);
+      } else if (startTouch < endTouch && counter > 0) {
+        setCounter(counter - 1);
       }
     }
   }
   React.useEffect(() => {
-    console.log(conter);
-    containerRef.current.style.transform = `translateY(-${conter * 100}%)`;
-  }, [conter]);
+    console.log(counter);
+    containerRef.current.style.transform = `translateY(-${counter * 100}%)`;
+  }, [counter]);
   return (
     <div
       className={styles.container}
@@ -53,7 +53,7 @@ export default function explore({ planets }: IData) {
       onTouchEnd={(e) => handleScrollMoblie(e)}
     >
       <div className={styles.content}>
-        <Planets planets={planets} />
+        <Planets planets={planets} currentPlanetIndex={counter} />
       </div>
     </div>
   );

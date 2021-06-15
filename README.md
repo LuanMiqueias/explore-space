@@ -21,7 +21,7 @@ Nesse projeto estou ultilizando
 Explore os planetas e luas do sistema solar como seu tamanho, sua massa, temperatura, curiosidades, entre outras informações.
 
 ## Principais funcionalidades da aplicação:
-- [ ] Ver informações sobre os planetas ou luas.
+- [x] Ver informações sobre os planetas ou luas.
 - [ ] Pesquisar um planeta ou lua.
 - [ ] Ver mais informações sobre um planeta ou lua
 

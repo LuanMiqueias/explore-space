@@ -5,6 +5,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Explore space</title>
+        <meta name="theme-color" content="#19202e" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"

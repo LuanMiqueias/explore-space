@@ -7,7 +7,7 @@
   gap:32px;
 
   transition: all .5s cubic-bezier(0.77, 0, 0, 0.93);
-
+  will-change:transform;
 }
 .container{
 
@@ -28,11 +28,8 @@
 }
 
 @media(max-width:768px){
-  .planets{
-    transition: all 1.2s cubic-bezier(0.77, 0, 0, 0.93);
-  }
-  .container{
-  max-width: 600px;
 
+  .container{
+    max-width: 600px;
   }
 }

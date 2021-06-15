@@ -5,6 +5,7 @@ import { Planets } from "../components/Planets";
 import styles from "../styles/pages/explore.module.css";
 
 import datafake from "../../datafake";
+import { ScrollBar } from "../components/ScrollBar";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const planets: IPlanets[] = datafake;
@@ -45,16 +46,19 @@ export default function explore({ planets }: IData) {
     containerRef.current.style.transform = `translateY(-${counter * 100}%)`;
   }, [counter]);
   return (
-    <div
-      className={styles.container}
-      ref={containerRef}
-      onWheel={(e: React.WheelEvent<HTMLDivElement>) => handleScroll(e)}
-      onTouchStart={(e) => handleScrollMoblie(e)}
-      onTouchEnd={(e) => handleScrollMoblie(e)}
-    >
-      <div className={styles.content}>
-        <Planets planets={planets} currentPlanetIndex={counter} />
+    <div className={styles.container}>
+      <div
+        className={styles.planets}
+        ref={containerRef}
+        onWheel={(e: React.WheelEvent<HTMLDivElement>) => handleScroll(e)}
+        onTouchStart={(e) => handleScrollMoblie(e)}
+        onTouchEnd={(e) => handleScrollMoblie(e)}
+      >
+        <div className={styles.content}>
+          <Planets planets={planets} currentPlanetIndex={counter} />
+        </div>
       </div>
+      <ScrollBar indexActivePlanet={counter} totalPlanets={planets.length} />
     </div>
   );
 }

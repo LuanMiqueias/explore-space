@@ -1,0 +1,23 @@
+
+.containerScroll{
+  width: 7px;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  position: relative;
+  top:20vh;
+}
+.scroll{
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+
+  transition: all .2s linear;
+}
+
+.scrollArrow{
+  position: absolute;
+  bottom: -18px;
+  width: 12px;
+  left:-50%;
+}

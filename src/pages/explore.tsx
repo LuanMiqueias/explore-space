@@ -4,9 +4,10 @@ import { IData, IPlanets } from "../../@types/Planets";
 import { Planets } from "../components/Planets";
 import styles from "../styles/pages/explore.module.css";
 
+import datafake from "../../datafake";
+
 export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch(`${process.env.URL_API}/planets`);
-  const planets: IPlanets[] = await res.json();
+  const planets: IPlanets[] = datafake;
   return {
     props: { planets },
   };

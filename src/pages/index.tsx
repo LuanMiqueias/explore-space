@@ -2,7 +2,6 @@ import React from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/pages/home.module.css";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Home() {
   const navigate = useRouter();

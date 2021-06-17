@@ -29,7 +29,7 @@ body{
   color:var(--title);
   font-weight: var(--light);
 
-  background: url('/background.jpg') repeat center center / 200%;
+  background: url('/background.jpg') repeat center center / 100%;
   background-attachment: fixed;
 
   width: 100%;
